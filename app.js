@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
 
-app.get('/:nombre', (req, res) => {
+app.get('/user/:nombre', (req, res) => {
   const nombre = req.params.nombre || 'desconocido';;
-
-  res.send(`<h1>Hola ${nombre}!</h1>`);
+  const Capnombre = nombre.charAt(0).toUpperCase()+ nombre.slice(1);
+  res.send(`<h1>Hola ${Capnombre}!</h1>`);
 });
 
 
