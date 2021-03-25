@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 
     }
     i++;
-    paragraph += i + '<p>' + text + '</p>';
+    paragraph += '<p>' + i  + text + '</p>';
 
   }
 res.send(`${paragraph}`);
