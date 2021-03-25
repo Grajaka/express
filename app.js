@@ -7,14 +7,14 @@ app.get('/', (req, res) => {
   var paragraph ='';
   while (i<51){
     if (i % 2 === 0){
-      text = i + ' Soy par!\n';
+      text = i + ' Soy par!';
     }
     else{
-      text = i+ ' Soy impar\n';
+      text = i+ ' Soy impar!';
 
     }
     i++;
-    paragraph += '<h1>' + text + '</h1>';
+    paragraph += '<p>' + text + '</p>';
 
   }
 res.send(`${paragraph}`);
